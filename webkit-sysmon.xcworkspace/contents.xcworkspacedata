@@ -4,4 +4,7 @@
    <FileRef
       location = "container:webkit-sysmon.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:lib/SystemKit/SystemKit.xcodeproj">
+   </FileRef>
 </Workspace>

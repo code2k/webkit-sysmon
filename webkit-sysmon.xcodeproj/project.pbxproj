@@ -11,7 +11,23 @@
 		E10B9E52209F517600F03F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B9E51209F517600F03F7D /* ViewController.swift */; };
 		E10B9E54209F517800F03F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10B9E53209F517800F03F7D /* Assets.xcassets */; };
 		E10B9E57209F517800F03F7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10B9E55209F517800F03F7D /* Main.storyboard */; };
+		E10B9E6D209F545100F03F7D /* SystemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10B9E6C209F545100F03F7D /* SystemKit.framework */; };
+		E10B9E6F209F549F00F03F7D /* SystemKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E10B9E6C209F545100F03F7D /* SystemKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E10B9E70209F549F00F03F7D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E10B9E6F209F549F00F03F7D /* SystemKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E10B9E4C209F517600F03F7D /* webkit-sysmon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "webkit-sysmon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +37,7 @@
 		E10B9E56209F517800F03F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E10B9E58209F517800F03F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10B9E59209F517800F03F7D /* webkit_sysmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = webkit_sysmon.entitlements; sourceTree = "<group>"; };
+		E10B9E6C209F545100F03F7D /* SystemKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SystemKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10B9E6D209F545100F03F7D /* SystemKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +57,7 @@
 			children = (
 				E10B9E4E209F517600F03F7D /* webkit-sysmon */,
 				E10B9E4D209F517600F03F7D /* Products */,
+				E10B9E6B209F545100F03F7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +82,14 @@
 			path = "webkit-sysmon";
 			sourceTree = "<group>";
 		};
+		E10B9E6B209F545100F03F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E10B9E6C209F545100F03F7D /* SystemKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,6 +100,7 @@
 				E10B9E48209F517600F03F7D /* Sources */,
 				E10B9E49209F517600F03F7D /* Frameworks */,
 				E10B9E4A209F517600F03F7D /* Resources */,
+				E10B9E70209F549F00F03F7D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
