@@ -13,6 +13,7 @@ import WebKit
 class ViewController: NSViewController {
 
     var webView: WKWebView!
+    var jsBridge: JSBridge!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +24,12 @@ class ViewController: NSViewController {
         configuration.userContentController = controller
 
         webView = WKWebView(frame: view.frame, configuration: configuration)
+        jsBridge = JSBridge(controller, webView: webView)
+
         webView.autoresizingMask = [.height, .width]
         view.addSubview(webView)
 
-        let url = URL(string: "https://google.com")!
+        let url = URL(string: "http://localhost:3000")!
 //        let url = Bundle.main.url(forResource: "index", withExtension: "html")!
         webView.load(URLRequest(url: url))
 
@@ -49,6 +52,4 @@ class ViewController: NSViewController {
         }
     }
 
-
 }
-
