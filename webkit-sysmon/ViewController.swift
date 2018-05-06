@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import SystemKit
 import WebKit
 
 class ViewController: NSViewController {
@@ -32,18 +31,6 @@ class ViewController: NSViewController {
         let url = URL(string: "http://localhost:3000")!
 //        let url = Bundle.main.url(forResource: "index", withExtension: "html")!
         webView.load(URLRequest(url: url))
-
-        let memoryUsage = System.memoryUsage()
-        func memoryUnit(_ value: Double) -> String {
-            if value < 1.0 { return String(Int(value * 1000.0))    + "MB" }
-            else           { return NSString(format:"%.2f", value) as String + "GB" }
-        }
-
-        print("\tFREE:            \(memoryUnit(memoryUsage.free))")
-        print("\tWIRED:           \(memoryUnit(memoryUsage.wired))")
-        print("\tACTIVE:          \(memoryUnit(memoryUsage.active))")
-        print("\tINACTIVE:        \(memoryUnit(memoryUsage.inactive))")
-        print("\tCOMPRESSED:      \(memoryUnit(memoryUsage.compressed))")
     }
 
     override var representedObject: Any? {

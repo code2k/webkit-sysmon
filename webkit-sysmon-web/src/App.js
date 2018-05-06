@@ -12,10 +12,10 @@ class App extends Component {
     window.pushData = this.dataHandler;
   }
 
+  // this will get called from native code:
   dataHandler = data => {
-    // let d = JSON.parse(data);
     this.setState({
-      value: data.value
+      value: data.model
     });
   };
 

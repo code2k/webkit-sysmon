@@ -28,12 +28,11 @@ class JSBridge: NSObject, WKScriptMessageHandler {
         }
     }
 
-    var counter = 0
-
     private func handleRefresh() {
-        print("refresh")
-        counter += 1
-        webView.evaluateJavaScript("window.pushData({value: \"\(counter)\"});", completionHandler: nil)
+        NSLog("refresh")
+        let data = SystemHelper.getJSON()
+        NSLog("\(data)")
+        webView.evaluateJavaScript("window.pushData(\(data));", completionHandler: nil)
 
     }
 
