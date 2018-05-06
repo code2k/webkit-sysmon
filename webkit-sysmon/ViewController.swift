@@ -8,11 +8,27 @@
 
 import Cocoa
 import SystemKit
+import WebKit
 
 class ViewController: NSViewController {
 
+    var webView: WKWebView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let configuration = WKWebViewConfiguration()
+        let controller = WKUserContentController()
+
+        configuration.userContentController = controller
+
+        webView = WKWebView(frame: view.frame, configuration: configuration)
+        webView.autoresizingMask = [.height, .width]
+        view.addSubview(webView)
+
+        let url = URL(string: "https://google.com")!
+//        let url = Bundle.main.url(forResource: "index", withExtension: "html")!
+        webView.load(URLRequest(url: url))
 
         let memoryUsage = System.memoryUsage()
         func memoryUnit(_ value: Double) -> String {

@@ -38,6 +38,7 @@
 		E10B9E58209F517800F03F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10B9E59209F517800F03F7D /* webkit_sysmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = webkit_sysmon.entitlements; sourceTree = "<group>"; };
 		E10B9E6C209F545100F03F7D /* SystemKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SystemKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10B9E71209F586D00F03F7D /* webkit-sysmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "webkit-sysmon.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		E10B9E4E209F517600F03F7D /* webkit-sysmon */ = {
 			isa = PBXGroup;
 			children = (
+				E10B9E71209F586D00F03F7D /* webkit-sysmon.entitlements */,
 				E10B9E4F209F517600F03F7D /* AppDelegate.swift */,
 				E10B9E51209F517600F03F7D /* ViewController.swift */,
 				E10B9E53209F517800F03F7D /* Assets.xcassets */,
@@ -123,6 +125,11 @@
 				TargetAttributes = {
 					E10B9E4B209F517600F03F7D = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -297,7 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "webkit-sysmon/webkit_sysmon.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "webkit-sysmon/webkit-sysmon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WV683XYNE3;
@@ -316,7 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "webkit-sysmon/webkit_sysmon.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "webkit-sysmon/webkit-sysmon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WV683XYNE3;
