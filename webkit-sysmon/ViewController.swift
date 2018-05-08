@@ -28,8 +28,11 @@ class ViewController: NSViewController {
         webView.autoresizingMask = [.height, .width]
         view.addSubview(webView)
 
+        #if DEBUG
         let url = URL(string: "http://localhost:3000")!
-//        let url = Bundle.main.url(forResource: "index", withExtension: "html")!
+        #else
+        let url = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "build")!
+        #endif
         webView.load(URLRequest(url: url))
     }
 
