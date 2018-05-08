@@ -1,9 +1,8 @@
 //
-//  JSBridge.swift
-//  webkit-sysmon
+// Copyright (c) 2018, CODE2K:LABS <https://code2k.net>
 //
-//  Created by Andreas Pataki on 06.05.18.
-//  Copyright © 2018 CODE2K:LABS. All rights reserved.
+// This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
 //
 
 import Foundation

@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2018, CODE2K:LABS <https://code2k.net>
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 import Col from "muicss/lib/react/col";
 import Row from "muicss/lib/react/row";
 import React from "react";
