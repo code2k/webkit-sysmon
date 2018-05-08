@@ -7,8 +7,10 @@ html, body, input, textarea, button {
 }
 
 .app {
+  display: -webkit-flex;
   display: flex;
   min-height: 100vh;
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
@@ -29,8 +31,10 @@ html, body, input, textarea, button {
 
 footer {
   box-sizing: border-box;
+  display: webkit-flex;
   display: flex;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
 
   position: fixed;
