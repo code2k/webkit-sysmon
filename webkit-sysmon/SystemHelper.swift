@@ -87,9 +87,10 @@ struct SystemUsage: Codable {
     let idle: Int
     let nice: Int
 
+    static var sys = System()
+
     init() {
-        var sys = System()
-        let cpuUsage = sys.usageCPU()
+        let cpuUsage = SystemUsage.sys.usageCPU()
         system = Int(cpuUsage.system)
         user = Int(cpuUsage.user)
         idle = Int(cpuUsage.idle)

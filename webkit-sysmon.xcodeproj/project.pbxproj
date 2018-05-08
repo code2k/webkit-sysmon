@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10967D6209F86AB00FAA948 /* build in Resources */ = {isa = PBXBuildFile; fileRef = E10967D5209F86AB00FAA948 /* build */; };
 		E10B9E50209F517600F03F7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B9E4F209F517600F03F7D /* AppDelegate.swift */; };
 		E10B9E52209F517600F03F7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10B9E51209F517600F03F7D /* ViewController.swift */; };
 		E10B9E54209F517800F03F7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10B9E53209F517800F03F7D /* Assets.xcassets */; };
@@ -32,14 +33,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E10B9E4C209F517600F03F7D /* webkit-sysmon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "webkit-sysmon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10967D5209F86AB00FAA948 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = build; path = "webkit-sysmon-web/build"; sourceTree = SOURCE_ROOT; };
+		E10B9E4C209F517600F03F7D /* WebkitSysmon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebkitSysmon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E10B9E4F209F517600F03F7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E10B9E51209F517600F03F7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E10B9E53209F517800F03F7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10B9E56209F517800F03F7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E10B9E58209F517800F03F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E10B9E6C209F545100F03F7D /* SystemKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SystemKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10B9E71209F586D00F03F7D /* webkit-sysmon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "webkit-sysmon.entitlements"; sourceTree = "<group>"; };
 		E10B9E72209F5F7700F03F7D /* JSBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSBridge.swift; sourceTree = "<group>"; };
 		E10B9E74209F6C8200F03F7D /* SystemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +69,7 @@
 		E10B9E4D209F517600F03F7D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E10B9E4C209F517600F03F7D /* webkit-sysmon.app */,
+				E10B9E4C209F517600F03F7D /* WebkitSysmon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,7 +77,7 @@
 		E10B9E4E209F517600F03F7D /* webkit-sysmon */ = {
 			isa = PBXGroup;
 			children = (
-				E10B9E71209F586D00F03F7D /* webkit-sysmon.entitlements */,
+				E10967D5209F86AB00FAA948 /* build */,
 				E10B9E4F209F517600F03F7D /* AppDelegate.swift */,
 				E10B9E72209F5F7700F03F7D /* JSBridge.swift */,
 				E10B9E74209F6C8200F03F7D /* SystemHelper.swift */,
@@ -99,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E10B9E4B209F517600F03F7D /* webkit-sysmon */ = {
+		E10B9E4B209F517600F03F7D /* WebkitSysmon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E10B9E5C209F517800F03F7D /* Build configuration list for PBXNativeTarget "webkit-sysmon" */;
+			buildConfigurationList = E10B9E5C209F517800F03F7D /* Build configuration list for PBXNativeTarget "WebkitSysmon" */;
 			buildPhases = (
 				E10B9E48209F517600F03F7D /* Sources */,
 				E10B9E49209F517600F03F7D /* Frameworks */,
@@ -112,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = "webkit-sysmon";
+			name = WebkitSysmon;
 			productName = "webkit-sysmon";
-			productReference = E10B9E4C209F517600F03F7D /* webkit-sysmon.app */;
+			productReference = E10B9E4C209F517600F03F7D /* WebkitSysmon.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +132,7 @@
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -150,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E10B9E4B209F517600F03F7D /* webkit-sysmon */,
+				E10B9E4B209F517600F03F7D /* WebkitSysmon */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10967D6209F86AB00FAA948 /* build in Resources */,
 				E10B9E54209F517800F03F7D /* Assets.xcassets in Resources */,
 				E10B9E57209F517800F03F7D /* Main.storyboard in Resources */,
 			);
@@ -310,7 +312,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "webkit-sysmon/webkit-sysmon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WV683XYNE3;
@@ -319,7 +320,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.code2k.webkit-sysmon";
+				PRODUCT_BUNDLE_IDENTIFIER = net.code2k.WebkitSysmon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -329,7 +330,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "webkit-sysmon/webkit-sysmon.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WV683XYNE3;
@@ -338,7 +338,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "net.code2k.webkit-sysmon";
+				PRODUCT_BUNDLE_IDENTIFIER = net.code2k.WebkitSysmon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E10B9E5C209F517800F03F7D /* Build configuration list for PBXNativeTarget "webkit-sysmon" */ = {
+		E10B9E5C209F517800F03F7D /* Build configuration list for PBXNativeTarget "WebkitSysmon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E10B9E5D209F517800F03F7D /* Debug */,
