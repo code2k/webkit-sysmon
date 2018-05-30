@@ -3,6 +3,10 @@ Webkit-Sysmon
 
 A simple macOS system monitor application. This is a proof of concept implementation using a WebKit view instead of Electron.
 
+<p align="center">
+  <img src="https://github.com/code2k/webkit-symon/raw/master/screenshots/sysmon-system.png" />      
+</p>
+
 ### References
 
 - [SystemKit](https://github.com/beltex/SystemKit)
