@@ -7,7 +7,7 @@
     "muicss": "^0.9.39",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "2.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,5 +15,8 @@
     "test": "react-scripts test --env=jsdom",
     "test:once": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    "safari >= 10"
+  ]
 }
