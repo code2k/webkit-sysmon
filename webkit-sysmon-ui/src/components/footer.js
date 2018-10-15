@@ -12,9 +12,9 @@ const Footer = props => {
     <footer>
       <div className="mui--text-dark-secondary">
         Last updated: {lastUpdated && lastUpdated.toLocaleString()} -{" "}
-        <a href="" onClick={onRefresh}>
+        <button onClick={onRefresh}>
           Refresh
-        </a>
+        </button>
       </div>
     </footer>
   );
