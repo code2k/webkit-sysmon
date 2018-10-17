@@ -31,7 +31,7 @@ struct SystemData: Codable {
         processCount = counts.processCount
         threadCount = counts.threadCount
 
-        loadAverage = System.loadAverage().map { String(format:"%.2f", $0) }
+        loadAverage = System.loadAverage().map { String(format: "%.2f", $0) }
 
         var battery = Battery()
         if battery.open() == kIOReturnSuccess {
@@ -51,9 +51,13 @@ struct SystemMemory: Codable {
 
     init() {
         let memoryUsage = System.memoryUsage()
+
         func memoryUnit(_ value: Double) -> String {
-            if value < 1.0 { return String(Int(value * 1000.0))    + " MB" }
-            else           { return NSString(format:"%.2f", value) as String + " GB" }
+            if value < 1.0 {
+                return String(Int(value * 1000.0)) + " MB"
+            } else {
+                return NSString(format: "%.2f", value) as String + " GB"
+            }
         }
 
         free = memoryUnit(memoryUsage.free)

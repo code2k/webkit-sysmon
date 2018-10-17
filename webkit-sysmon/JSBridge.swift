@@ -32,7 +32,6 @@ class JSBridge: NSObject, WKScriptMessageHandler {
         let data = SystemHelper.getJSON()
         NSLog("\(data)")
         webView.evaluateJavaScript("window.pushData(\(data));", completionHandler: nil)
-
     }
 
 }
