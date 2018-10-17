@@ -9,7 +9,7 @@ import { TitleValue } from "./common";
 
 const Battery = ({ battery }) => {
   return battery ? (
-    <div class="tab">
+    <div className="tab">
       <TitleValue
         title="AC Powered"
         value={battery.isACPowered ? "YES" : "NO"}

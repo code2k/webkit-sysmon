@@ -16,7 +16,7 @@ const formatUptime = uptime => {
 
 const System = ({ data }) => {
   return (
-    <div class="tab">
+    <div className="tab">
       <TitleValue title="Model" value={data.model} />
       <TitleValue title="Physical Cores" value={data.physicalCores} />
       <TitleValue title="Logical Cores" value={data.logicalCores} />

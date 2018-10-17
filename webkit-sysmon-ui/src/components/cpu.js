@@ -11,7 +11,7 @@ import { TitleValue } from "./common";
 const Cpu = ({ loadAverage, usage }) => {
   const load = loadAverage.join(" / ");
   return (
-    <div class="tab">
+    <div className="tab">
       <TitleValue title="System" value={usage.system + "%"} />
       <TitleValue title="User" value={usage.user + "%"} />
       <TitleValue title="Idle" value={usage.idle + "%"} />
